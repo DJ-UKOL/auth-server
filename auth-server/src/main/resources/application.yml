@@ -1,0 +1,11 @@
+server:
+  port: 9000
+spring:
+  datasource:
+    generate-unique-name: false
+    name: taco-server
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
