@@ -4,7 +4,6 @@ import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import ru.dinerik.authserver.users.User;
 import ru.dinerik.authserver.users.UserRepository;
@@ -16,10 +15,10 @@ public class AuthServerApplication {
 		SpringApplication.run(AuthServerApplication.class, args);
 	}
 
-	@Bean
+/*	@Bean
 	public PasswordEncoder passwordEncoder() {
 		return new BCryptPasswordEncoder();         // применяет надежное шифрование bcrypt
-	}
+	}*/
 
 	@Bean
 	public ApplicationRunner dataLoader(
